@@ -1,0 +1,11 @@
+nav {
+    position: sticky;
+    top: 0;
+    background: black;
+    color: white;
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: right;
+    }
+}
