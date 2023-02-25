@@ -37,7 +37,7 @@ process.env.MONGOURI
 				server.listen(port)
 				server.on("error", onError)
 				server.on("listening", onListening)
-				console.log(`Server listening and ${process.env.MONGOURI} connected !!`)
+				console.log(`Server listening and ${process.env.MONGOURI} MongoDB connected ✅ in port !!`)
 			})
 			.catch((err) => {
 				console.log(err)

@@ -11,14 +11,15 @@ import cors from 'cors';
 import serviceRouter from './src/v1/routes/service.routes.js';
 import adminRouter from './src/v1/routes/admin.routes.js';
 import orderRouter from './src/v1/routes/order.routes.js';
-import cartRouter from './src/v1/routes/cart.routes.js';
+
+       
+import cartRouter from './src/v1/routes/cart.routes.js';         
 
 const app = express();
 export const __filename = url.fileURLToPath(import.meta.url);
 export const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-
-app.use(logger('dev'));
-app.use(express.json());
+ app.use(logger('dev'));
+app.use(express.json());  
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors({ origin: '*' }));
@@ -34,7 +35,7 @@ app.use('/api/v1/admin', adminRouter);
 app.use('/api/v1/order', orderRouter);
 app.use('/api/v1/cart', cartRouter);
 
-// Handling error in routes
+// Handling error in routesc    
 
 /* This is a middleware that handles errors in the routes. */
 app.use((err, req, res, next) => {
