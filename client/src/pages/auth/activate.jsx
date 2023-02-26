@@ -18,7 +18,7 @@ const Activate = () => {
 		const activate = async () => {
 			setLoading(true)
 			try {
-				const req = await axios.post(`${API}/auth/activate/${token}`)
+				const req = await axios.get(`${API}/auth/activate/${token}`)
 				console.log(req.data)
 				setAlert("User activated Please login")
 			} catch (error) {

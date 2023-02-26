@@ -203,27 +203,30 @@ export const forgotPassword = asyncHandler(async (req, res, next) => {
 
         await userToken.save();
 
-        // sendMail(email, link)
-        //     .then((data) => {
-        //         console.log(data);
-        //         return res.json({
-        //             msg: 'Please check your mail for activation link...',
-        //             resetToken,
-        //         });
-        //     })
-        //     .catch((err) => {
-        //         console.log(err);
-        //         return res.status(408).json({
-        //             msg: `Failed to send mail, Please try again later!`,
-        //             resetToken,
-        //         });
-        //     });
+        const link = `${process.env?.CLIENT_URI}/auth/reset/${resetToken}`;
 
-        return res.send({ userToken, resetToken });
+        sendMail(email, link)
+            .then((data) => {
+                console.log(data);
+                return res.json({
+                    msg: 'Please check your mail for activation link...',
+                    resetToken,
+                });
+            })
+            .catch((err) => {
+                console.log(err);
+                return res.status(408).json({
+                    msg: `Failed to send mail, Please try again later!`,
+                    resetToken,
+                });
+            });
+
+        // return res.send({ userToken, resetToken });
     } catch (error) {
         next(error);
     }
 });
+
 
 export const resetPassword = asyncHandler(async (req, res, next) => {
     try {

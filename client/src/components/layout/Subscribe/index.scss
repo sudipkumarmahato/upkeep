@@ -1,0 +1,37 @@
+.subscribe {
+    color: white;
+    display: flex;
+    margin: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+        font-size: 60px;
+        font-family: 'Montserrat';
+        margin-right: auto;
+        flex: 1;
+    }
+    input {
+        flex: 0.4;
+        padding: 10px 30px;
+        background: none;
+        outline: none;
+        border: none;
+        color: inherit;
+        border: 1px solid #fff;
+    }
+    button {
+        padding: 10px 40px;
+        border: none;
+        outline: none;
+        background: white;
+        color: black;
+        border: 1px solid #fff;
+        cursor: pointer;
+
+        &:hover {
+            background: transparent;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
