@@ -35,7 +35,9 @@ app.use('/api/v1/admin', adminRouter);
 app.use('/api/v1/order', orderRouter);
 app.use('/api/v1/cart', cartRouter);
 
-// Handling error in routesc    
+// Handling error in routesc 
+
+
 
 /* This is a middleware that handles errors in the routes. */
 app.use((err, req, res, next) => {

@@ -6,6 +6,7 @@ import Service from '../models/service.model.js';
 
 export const createService = asyncHandler(async (req, res, next) => {
     const { title, desc, price } = req.body;
+
     const { id } = req.query;
 
     if (!id) return next(createError('Category is required!', 400));
