@@ -1,14 +1,20 @@
 import './navbar.scss';
 import React from 'react';
+// import { Link } from 'react-router-dom';
+import { Images } from '../../../../public/assets';
 
 const Navbar = () => {
     return (
         <nav>
             <div className="left">
                 <div className="logo">
-                    <p>UpKeep</p>
+                    <img
+                        style={{ width: '20%' }}
+                        src={Images.logoLight}
+                        alt="Upkeep"
+                    />
                 </div>
-                <button>Become a Vendor?</button>
+                {/* <button>Become a Vendor?</button> */}
             </div>
 
             <div className="right">
