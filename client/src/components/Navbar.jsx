@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -10,15 +11,27 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-            <h1 className="w-full text-3xl font-bold text-[#0be9b1]">upKeep</h1>
+            <Link to="/" className="w-full text-3xl font-bold text-[#0be9b1]">
+                upkeep
+            </Link>
             <ul className="hidden md:flex">
                 <li className="p-4">Home</li>
                 <li className="p-4">Services</li>
-                <li className="p-4">Help</li>
+                <Link to="/help" className="p-4">
+                    Help
+                </Link>
                 <li className="p-4">About</li>
-                <li className="p-4 text-center font-medium rounded-md w-28 px-3 bg-[#00df9a]">
+                <Link
+                    to="/signup"
+                    className="p-4 text-center font-medium rounded-md w-24 px-3 text-black bg-[#00df9a]"
+                    style={{
+                        height: '40px',
+                        paddingTop: '9px',
+                        marginTop: '6px',
+                    }}
+                >
                     SignUp
-                </li>
+                </Link>
             </ul>
             <div onClick={handleNav} className="block md:hidden ">
                 {nav ? (
