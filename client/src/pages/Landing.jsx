@@ -6,6 +6,8 @@ import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials.jsx';
 import Features from '../components/Features.jsx';
 import FeaturesBlocks from '../components/FeaturesBlocks.jsx';
+import { Team } from '../components/Team';
+// import Contact, { Team } from '../components/Team';
 
 const Landing = () => {
     return (
@@ -14,6 +16,7 @@ const Landing = () => {
             <Hero />
             <Features />
             <FeaturesBlocks />
+            <Team />
             <Testimonials />
             <Newsletter />
             <Footer />
