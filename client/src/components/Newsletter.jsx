@@ -2,7 +2,7 @@ import React from 'react';
 
 const Newsletter = () => {
     return (
-        <div className="h-[300px] bg-slate-100 flex items-center justify-center flex-col">
+        <div className="h-[400px] bg-slate-100 flex items-center justify-center flex-col">
             <h1 className="text-5xl mb-5">Newsletter</h1>
             <div className="text-2xl font-light mb-5">
                 Get timely updates for latest products and services.
