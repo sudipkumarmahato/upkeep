@@ -26,41 +26,42 @@ const About = () => {
                         About Us
                     </h2>
                     <p className="text-md text-justify   text-gray-700 mb-8">
-                        Our project is focused on developing the UpKeep
-                        platform, which aims to become the leading multi-vendor
-                        service provider in Nepal. We are committed to providing
-                        customers with high-quality, experienced service
-                        providers through our platform. Our main goal is to act
-                        as a middleman between service seekers and providers by
-                        connecting them through our platform. Our project aims
-                        to revolutionize the way services are accessed and
-                        provided in Nepal by improving the quality and
-                        availability of services through a convenient and
-                        easy-to-use platform.
+                        Our <span className="font-bold text-xl">project</span>{' '}
+                        is focused on developing the UpKeep platform, which aims
+                        to become the leading multi-vendor service provider in
+                        Nepal. We are committed to providing customers with
+                        high-quality, experienced service providers through our
+                        platform. Our main goal is to act as a middleman between
+                        service seekers and providers by connecting them through
+                        our platform. Our project aims to revolutionize the way
+                        services are accessed and provided in Nepal by improving
+                        the quality and availability of services through a
+                        convenient and easy-to-use platform.
                     </p>
                     <p className="text-md text-justify text-gray-700 mb-8">
-                        Our mission is to make services accessible to all
-                        customers in Nepal. We believe that everyone should have
-                        access to high-quality services, and our platform aims
-                        to provide just that. By connecting customers with
-                        reliable and experienced service providers, we hope to
-                        make a positive impact on the service industry in Nepal.
-                        We are dedicated to creating a platform that is easy to
-                        use, transparent, and reliable, ensuring that customers
+                        Our <span className="font-bold text-xl">mission</span>{' '}
+                        is to make services accessible to all customers in
+                        Nepal. We believe that everyone should have access to
+                        high-quality services, and our platform aims to provide
+                        just that. By connecting customers with reliable and
+                        experienced service providers, we hope to make a
+                        positive impact on the service industry in Nepal. We are
+                        dedicated to creating a platform that is easy to use,
+                        transparent, and reliable, ensuring that customers
                         receive the best possible service.
                     </p>
                     <p className="text-md text-justify text-gray-700 mb-8">
-                        NOur vision is to become the go-to platform for
-                        customers in Nepal who are seeking quality service
-                        providers. We aim to set a new standard for service
-                        provision in Nepal by providing a one-stop-shop for all
-                        service needs. We envision a future where customers can
-                        easily access a wide range of services through our
-                        platform, and service providers can connect with
-                        potential customers in a seamless and efficient way. Our
-                        ultimate goal is to create a platform that benefits both
-                        service providers and customers, providing value and
-                        convenience to all.
+                        Our <span className="font-bold text-xl">vision</span> is
+                        to become the go-to platform for customers in Nepal who
+                        are seeking quality service providers. We aim to set a
+                        new standard for service provision in Nepal by providing
+                        a one-stop-shop for all service needs. We envision a
+                        future where customers can easily access a wide range of
+                        services through our platform, and service providers can
+                        connect with potential customers in a seamless and
+                        efficient way. Our ultimate goal is to create a platform
+                        that benefits both service providers and customers,
+                        providing value and convenience to all.
                     </p>
                 </div>
             </div>

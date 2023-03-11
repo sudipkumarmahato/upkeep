@@ -6,7 +6,7 @@ function Testimonials() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="py-12 md:py-20">
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                        <h2 className="h2 mb-4 text-white text-4xl font-bold">
+                        <h2 className="h2 mb-4 text-red-500 text-4xl font-bold">
                             Join our multi-vendor platform based in Nepal and
                             trust us like 100+ vendors worldwide.
                         </h2>

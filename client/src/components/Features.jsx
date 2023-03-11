@@ -7,7 +7,7 @@ const Features = () => {
                 <h1 className="h1 mb-4 text-white text-6xl font-bold">
                     Embrace the ease of Vendor solutions
                 </h1>
-                <p className="text-xl text-gray-600">
+                <p className="text-xl text-center  text-white">
                     our platform simplifies multi-vendor management for your
                     convenience and services at people doorstep.
                 </p>

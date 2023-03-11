@@ -12,13 +12,15 @@ const Navbar = () => {
     return (
         <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
             <Link to="/" className="w-full text-3xl font-bold text-[#0be9b1]">
-                upkeep
+                UpKeep
             </Link>
             <ul className="hidden md:flex">
                 <Link to="/Home" className="p-4">
                     Home
                 </Link>
-                <li className="p-4">Services</li>
+                <Link to="/Home" className="p-4">
+                    Service
+                </Link>
                 <Link to="/help" className="p-4">
                     Help
                 </Link>

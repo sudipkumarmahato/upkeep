@@ -4,14 +4,13 @@ export const Team = () => {
     return (
         <>
             <div class="bg-white px-40 py-24 sm:py-32">
-                <div class="ml-[230px] grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
+                <div class="ml-[400px] grid max-w-7xl gap-y-20 gap-x-8 px-6 lg:px-8 xl:grid-cols-3">
                     <div class="max-w-2xl ml-10">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Meet Our Developer
                         </h2>
                         <p class="mt-6 text-lg leading-8 text-gray-600">
-                            Backend developer at AITC Kathmandu and also the
-                            President of the Web Development Club.
+                            Backend developer at AITC Kathmandu.
                         </p>
                     </div>
 
