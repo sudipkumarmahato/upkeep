@@ -11,7 +11,10 @@ const Login = () => {
             ></div>
             <div className="w-full lg:w-1/2 bg-white flex justify-center items-center">
                 <form className="px-8 py-6">
-                    <h2 className="text-2xl mb-4">Login</h2>
+                    <h1 className="text-3xl font-bold mb-1">Welcome Back!</h1>
+                    <h4 className="text-md mb-4 font-light">
+                        Login into your account
+                    </h4>
 
                     <div className="mb-4">
                         <label
@@ -24,7 +27,7 @@ const Login = () => {
                             type="email"
                             id="email"
                             name="email"
-                            className="w-[420px] border border-gray-400 p-2"
+                            className="w-[420px] border rounded-md border-gray-400 p-2"
                         />
                     </div>
                     <div className="mb-4">
@@ -38,13 +41,13 @@ const Login = () => {
                             type="password"
                             id="password"
                             name="password"
-                            className="w-full border border-gray-400 p-2"
+                            className="w-full border rounded-md border-gray-400 p-2"
                         />
                     </div>
 
                     <button
                         type="submit"
-                        className="bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-green-600 w-full"
+                        className="bg-green-500 text-white font-bold py-2 px-4  focus:outline-none focus:shadow-outline hover:bg-green-600 w-full rounded-md"
                     >
                         Login
                     </button>
