@@ -15,12 +15,17 @@ const Navbar = () => {
                 upkeep
             </Link>
             <ul className="hidden md:flex">
-                <li className="p-4">Home</li>
+                <Link to="/Home" className="p-4">
+                    Home
+                </Link>
                 <li className="p-4">Services</li>
                 <Link to="/help" className="p-4">
                     Help
                 </Link>
-                <li className="p-4">About</li>
+                <Link to="/about" className="p-4">
+                    About
+                </Link>
+
                 <Link
                     to="/signup"
                     className="p-4 text-center font-medium rounded-md w-24 px-3 text-black bg-[#00df9a]"

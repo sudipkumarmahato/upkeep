@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SignupImage from '../assets/images/bgImage.jpg';
+import SignupImage from '../assets/images/bgSignup.jpg';
 
 const SignupPage = () => {
     return (

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SignupImage from '../assets/images/bgImage.jpg';
+import loginImage from '../assets/images/bgLogin.jpg';
 
 const Login = () => {
     return (
         <div className="flex h-screen w-screen bg-black">
             <div
                 className="hidden lg:block w-1/2 bg-cover bg-center"
-                style={{ backgroundImage: `url(${SignupImage})` }}
+                style={{ backgroundImage: `url(${loginImage})` }}
             ></div>
             <div className="w-full lg:w-1/2 bg-white flex justify-center items-center">
                 <form className="px-8 py-6">
