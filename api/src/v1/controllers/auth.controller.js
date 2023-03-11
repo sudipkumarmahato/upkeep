@@ -20,11 +20,21 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export const authRegister = async (req, res, next) => {
     try {
-        const email = sanitize(req.body.email);
+        const fullName = sanitize(req.body.fullName);
         const username = sanitize(req.body.username);
+        const address = sanitize(req.body.address);
+        const email = sanitize(req.body.email);
         const password = sanitize(req.body.password);
+        const confirmPassword = sanitize(req.body.password);
 
-        if (!email || !username || !password)
+        if (
+            !fullName ||
+            !email ||
+            !username ||
+            !address ||
+            !password ||
+            !confirmPassword
+        )
             return res.status(400).json({ msg: 'Please enter all fields! ' });
 
         const userExist = await User.findOne({
@@ -48,9 +58,25 @@ export const authRegister = async (req, res, next) => {
             return res
                 .status(400)
                 .json({ msg: 'Email address should be valid!' });
+
         if (!validatePassword(password))
             return res.status(400).json({
                 msg: 'Password must contain one uppercase, symbol, number, and atleast 8 characters !',
+            });
+
+        if (!validatePassword(confirmPassword))
+            return res.status(400).json({
+                msg: 'Password must contain one uppercase, symbol, number, and atleast 8 characters !',
+            });
+
+        if (fullName.length < 2 || fullName.length > 50)
+            return res.status(400).json({
+                msg: 'Full name should be between 2 and 50 characters!',
+            });
+
+        if (address.length < 2 || address.length > 100)
+            return res.status(400).json({
+                msg: 'Address should be between 2 and 100 characters!',
             });
 
         const token = generateToken({ email, username, password });
@@ -226,7 +252,6 @@ export const forgotPassword = asyncHandler(async (req, res, next) => {
         next(error);
     }
 });
-
 
 export const resetPassword = asyncHandler(async (req, res, next) => {
     try {

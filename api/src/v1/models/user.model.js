@@ -3,6 +3,11 @@ import bcrypt from 'bcryptjs';
 
 const userSchema = new mongoose.Schema(
     {
+        fullName: {
+            type: String,
+            required: true,
+            trim: true,
+        },
         username: {
             type: String,
             required: true,
@@ -27,11 +32,21 @@ const userSchema = new mongoose.Schema(
             required: true,
             select: false,
         },
+        confirmPassword: {
+            type: String,
+            required: true,
+            select: false,
+        },
         vendorAccess: {
             type: Boolean,
             default: false,
         },
         phone: String,
+        address: {
+            type: String,
+            required: true,
+            trim: true,
+        },
         business_address: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Address',
