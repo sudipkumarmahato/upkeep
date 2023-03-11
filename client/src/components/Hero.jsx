@@ -9,7 +9,7 @@ const Hero = () => {
                     FROM TRUSTED VENDORS
                 </p>
                 <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
-                    Service at Doorstep
+                    Hassle Free Service
                 </h1>
                 <div className="flex justify-center items-center">
                     <p className="md:text-5xl sm:text-4xl text-xl font-bold py-4">

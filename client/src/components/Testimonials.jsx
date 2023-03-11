@@ -2,26 +2,22 @@ import React from 'react';
 
 function Testimonials() {
     return (
-        <section className="py-12">
+        <section className="py-16">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="py-12 md:py-20">
-                    {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                         <h2 className="h2 mb-4 text-white text-4xl font-bold">
-                            Trusted by over 20,000 companies all over the world
+                            Join our multi-vendor platform based in Nepal and
+                            trust us like 100+ vendors worldwide.
                         </h2>
-                        <p
-                            className="text-xl text-gray-600"
-                            data-aos="zoom-y-out"
-                        >
-                            Arcu cursus vitae congue mauris rhoncus viverra nibh
-                            cras pulvinar mattis blandit libero cursus mattis.
+                        <p className="text-xl text-gray-600">
+                            Choose our Nepal-based multi-vendor platform for
+                            reliable, top-notch service and support. Join our
+                            satisfied customers today!
                         </p>
                     </div>
 
-                    {/* Items */}
                     <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
-                        {/* Item */}
                         <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
                             <svg
                                 className="max-w-full fill-current text-gray-400"
@@ -34,7 +30,6 @@ function Testimonials() {
                             </svg>
                         </div>
 
-                        {/* Item */}
                         <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
                             <svg
                                 className="max-w-full fill-current text-gray-400"
@@ -47,7 +42,6 @@ function Testimonials() {
                             </svg>
                         </div>
 
-                        {/* Item */}
                         <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
                             <svg
                                 className="max-w-full fill-current text-gray-400"
@@ -60,7 +54,6 @@ function Testimonials() {
                             </svg>
                         </div>
 
-                        {/* Item */}
                         <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
                             <svg
                                 className="max-w-full fill-current text-gray-400"
@@ -73,7 +66,6 @@ function Testimonials() {
                             </svg>
                         </div>
 
-                        {/* Item */}
                         <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
                             <svg
                                 className="max-w-full fill-current text-gray-400"
